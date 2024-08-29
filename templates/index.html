@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat Agents</title>
+</head>
+<body>
+<h1>Available Agents</h1>
+<ul>
+{% for agent in agents %}
+<li><a href="/chat/{{ agent.agent_name }}">{{ agent.agent_name }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
