@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat with {{ agent.agent_name }}</title>
+</head>
+<body>
+<h1>Chat with {{ agent.agent_name }}</h1>
+<form action="/action/{{ agent.agent_name }}" method="post">
+<input type="text" name="action" placeholder="Enter an action">
+<input type="submit" value="Submit">
+</form>
+<div id="response"></div>
+</body>
+</html>
+
